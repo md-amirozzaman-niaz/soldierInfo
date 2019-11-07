@@ -1,0 +1,21 @@
+a.active{
+    color: black;
+    border-bottom: 2px solid;
+}
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.v-align{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.form-row{
+    /* margin:0 !important; */
+}
