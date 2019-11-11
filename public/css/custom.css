@@ -95,7 +95,7 @@
 .selected-item-list li span:hover{
     font-weight: bolder;
     color:#fff;
-    background: cadetblue;
+    background: #e2635d;
 }
 .v-align{
     width: 100%;
@@ -177,4 +177,56 @@
 }
 img{
     width:100%;
+}
+
+.selected-item-list {
+    padding-left: 0.1em;
+    display: inline-flex;
+    line-height: 1em;
+    position: absolute;
+    top: -4px;
+    background: white;
+}
+.selected-item-list li.show {
+    width: auto;
+    font-size: 10px;
+    padding: .5em;
+    margin: .2em;
+    padding-right: 20px;
+    border:0px;
+    box-shadow: inset 1px 1px 0px #ceeaea, inset -1px -1px 0px #ceeaea;
+    transform: scale(1,1);
+}
+.selected-item-list li {
+    display: inline-block;
+    width: 0px;
+    height: 24px;
+    overflow: hidden;
+    background: #e6f4ff;
+    color: #878fb5;
+    border-radius: 3px;
+    padding: 0px;
+    position: relative;
+    margin: 0px;
+    box-shadow: none;
+    transition: all .2s ease-out;
+    transform: scale(0,0.5);
+}
+.selected-item-list li span {
+    font-size: 8px;
+    display: inline-block;
+    width: 16px;
+    height: 24px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    line-height: 24px;
+    border-left: 1px solid #95cbe8;
+    color: #484646;
+    background: #ffffff00;
+    border-radius: 0px;
+    cursor: pointer;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
