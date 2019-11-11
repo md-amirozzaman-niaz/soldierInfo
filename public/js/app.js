@@ -1862,6 +1862,603 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/academic.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/academic.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    skills: {
+      required: true
+    },
+    max: {
+      required: true
+    },
+    form: {
+      required: true
+    }
+  },
+  data: function data() {
+    return {
+      checkedSkill: [],
+      skillOption: {}
+    };
+  },
+  computed: {
+    checkedList: function checkedList() {
+      this.checkedSkill = _toConsumableArray(this.skills.game.filter(function (g) {
+        return g;
+      }));
+      this.checkedSkill = [].concat(_toConsumableArray(this.checkedSkill), _toConsumableArray(this.skills.entertainment.filter(function (g) {
+        return g;
+      })));
+      this.checkedSkill = [].concat(_toConsumableArray(this.checkedSkill), _toConsumableArray(this.skills.other.filter(function (g) {
+        return g;
+      })));
+      return this.checkedSkill;
+    }
+  },
+  methods: {
+    upDateCheckedSkill: function upDateCheckedSkill(e) {
+      this.$emit('up-date-checked-skill', e);
+    }
+  },
+  created: function created() {
+    this.skillOption = _objectSpread({}, this.skills);
+  },
+  mounted: function mounted() {
+    console.log(this.skillOption);
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/personalInfo.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/personalInfo.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    persoanl: {
+      required: true
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/serviceHistory.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/serviceHistory.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
@@ -37200,6 +37797,1642 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/academic.vue?vue&type=template&id=4459a2d2&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/academic.vue?vue&type=template&id=4459a2d2& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "col" }, [
+      _vm._v("\n            Civil\n        ")
+    ]),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-row m-0" }, [
+      _vm._m(1),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.JSC,
+                expression: "form.JSC"
+              }
+            ],
+            staticClass: "custom-select mr-sm-2",
+            attrs: { id: "inlineFormCustomSelect" },
+            on: {
+              change: function($event) {
+                var $$selectedVal = Array.prototype.filter
+                  .call($event.target.options, function(o) {
+                    return o.selected
+                  })
+                  .map(function(o) {
+                    var val = "_value" in o ? o._value : o.value
+                    return val
+                  })
+                _vm.$set(
+                  _vm.form,
+                  "JSC",
+                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                )
+              }
+            }
+          },
+          [
+            _c("option", { attrs: { value: "Pending" } }, [_vm._v("Pending")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("Passed")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("failed")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.SSC,
+                expression: "form.SSC"
+              }
+            ],
+            staticClass: "custom-select mr-sm-2",
+            attrs: { id: "inlineFormCustomSelect" },
+            on: {
+              change: function($event) {
+                var $$selectedVal = Array.prototype.filter
+                  .call($event.target.options, function(o) {
+                    return o.selected
+                  })
+                  .map(function(o) {
+                    var val = "_value" in o ? o._value : o.value
+                    return val
+                  })
+                _vm.$set(
+                  _vm.form,
+                  "SSC",
+                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                )
+              }
+            }
+          },
+          [
+            _c("option", { attrs: { value: "other" } }, [_vm._v("Pending")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("Passed")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("failed")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.HSC,
+                expression: "form.HSC"
+              }
+            ],
+            staticClass: "custom-select mr-sm-2",
+            attrs: { id: "inlineFormCustomSelect" },
+            on: {
+              change: function($event) {
+                var $$selectedVal = Array.prototype.filter
+                  .call($event.target.options, function(o) {
+                    return o.selected
+                  })
+                  .map(function(o) {
+                    var val = "_value" in o ? o._value : o.value
+                    return val
+                  })
+                _vm.$set(
+                  _vm.form,
+                  "HSC",
+                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                )
+              }
+            }
+          },
+          [
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("Passed")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("failed")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("Pending")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.other,
+                expression: "form.other"
+              }
+            ],
+            staticClass: "custom-select mr-sm-2",
+            attrs: { id: "inlineFormCustomSelect" },
+            on: {
+              change: function($event) {
+                var $$selectedVal = Array.prototype.filter
+                  .call($event.target.options, function(o) {
+                    return o.selected
+                  })
+                  .map(function(o) {
+                    var val = "_value" in o ? o._value : o.value
+                    return val
+                  })
+                _vm.$set(
+                  _vm.form,
+                  "other",
+                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                )
+              }
+            }
+          },
+          [
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("failed")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("Passed")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("Pending")])
+          ]
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("hr"),
+    _vm._v(" "),
+    _c("div", { staticClass: "col" }, [_vm._v("\n            Military\n    ")]),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
+    _c("hr"),
+    _vm._v(" "),
+    _c("div", { staticClass: "col" }, [
+      _c("label", { attrs: { for: "" } }, [_vm._v("Special skill")]),
+      _vm._v(" "),
+      _c(
+        "ul",
+        { staticClass: "selected-item-list" },
+        _vm._l(_vm.checkedList, function(item) {
+          return _c(
+            "li",
+            { key: item.description, class: { show: item.checked } },
+            [
+              _vm._v(_vm._s(item.description) + " "),
+              _c(
+                "span",
+                {
+                  attrs: { title: "remove " + item.description },
+                  on: {
+                    click: function($event) {
+                      return _vm.upDateCheckedSkill(item.description)
+                    }
+                  }
+                },
+                [_vm._v("X")]
+              )
+            ]
+          )
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _vm.max
+        ? _c(
+            "div",
+            {
+              staticClass: "alert alert-primary popups-fade-in-up fade show",
+              attrs: { role: "alert" }
+            },
+            [
+              _vm._v(
+                "\n            you have reached max skill.To add else item,remove from added item\n            "
+              ),
+              _vm._m(4)
+            ]
+          )
+        : _vm._e()
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-row col" }, [
+      _c(
+        "div",
+        { staticClass: "col" },
+        [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Game")]),
+          _vm._v(" "),
+          _vm._l(_vm.skillOption.game, function(game) {
+            return _c(
+              "div",
+              {
+                key: game.description,
+                staticClass: "form-check  custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "form-check-input custom-control-input",
+                  attrs: {
+                    type: "checkbox",
+                    id: game.description,
+                    disabled: _vm.max
+                  },
+                  domProps: { value: game.description, checked: game.checked },
+                  on: {
+                    click: function($event) {
+                      return _vm.upDateCheckedSkill(game.description)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "form-check-label custom-control-label",
+                    attrs: { for: game.description }
+                  },
+                  [_vm._v(_vm._s(game.description))]
+                )
+              ]
+            )
+          })
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col" },
+        [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Entertainment")]),
+          _vm._v(" "),
+          _vm._l(_vm.skillOption.entertainment, function(entertainment) {
+            return _c(
+              "div",
+              {
+                key: entertainment.description,
+                staticClass: "form-check  custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "form-check-input custom-control-input",
+                  attrs: {
+                    type: "checkbox",
+                    id: entertainment.description,
+                    disabled: _vm.max
+                  },
+                  domProps: {
+                    value: entertainment.description,
+                    checked: entertainment.checked
+                  },
+                  on: {
+                    click: function($event) {
+                      return _vm.upDateCheckedSkill(entertainment.description)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "form-check-label custom-control-label",
+                    attrs: { for: entertainment.description }
+                  },
+                  [_vm._v(_vm._s(entertainment.description))]
+                )
+              ]
+            )
+          })
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col" },
+        [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Other")]),
+          _vm._v(" "),
+          _vm._l(_vm.skillOption.other, function(other) {
+            return _c(
+              "div",
+              {
+                key: other.description,
+                staticClass: "form-check  custom-checkbox"
+              },
+              [
+                _c("input", {
+                  staticClass: "form-check-input custom-control-input",
+                  attrs: {
+                    type: "checkbox",
+                    id: other.description,
+                    disabled: _vm.max
+                  },
+                  domProps: { checked: other.checked },
+                  on: {
+                    click: function($event) {
+                      return _vm.upDateCheckedSkill(other.description)
+                    }
+                  }
+                }),
+                _vm._v(" "),
+                _c(
+                  "label",
+                  {
+                    staticClass: "form-check-label custom-control-label",
+                    attrs: { for: other.description }
+                  },
+                  [_vm._v(_vm._s(other.description))]
+                )
+              ]
+            )
+          })
+        ],
+        2
+      )
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-row mb-2" }, [
+      _c("div", { staticClass: "col v-align" }, [
+        _vm._v("\n            #\n        ")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col v-align" }, [_c("label", [_vm._v("JSC")])]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col v-align" }, [_c("label", [_vm._v("SSC")])]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col v-align" }, [_c("label", [_vm._v("HSC")])]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col v-align" }, [
+        _c("label", [_vm._v("OTHER")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col v-align" }, [
+      _c("label", [_vm._v("Result")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-row m-0" }, [
+      _c("div", { staticClass: "col v-align" }, [
+        _vm._v("\n            #\n        ")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col v-align" }, [_c("label", [_vm._v("BTT")])]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col v-align" }, [
+        _c("label", [_vm._v("ARMS")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col v-align" }, [
+        _c("label", [_vm._v("Comando")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col v-align" }, [_c("label", [_vm._v("BMR")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-row m-0" }, [
+      _c("div", { staticClass: "col v-align" }, [
+        _c("label", [_vm._v("Result")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col form-row m-0" }, [
+        _c(
+          "select",
+          {
+            staticClass: "custom-select mr-1 col",
+            attrs: { id: "inlineFormCustomSelect" }
+          },
+          [
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
+            staticClass: "custom-select col",
+            attrs: { id: "inlineFormCustomSelect" }
+          },
+          [
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col form-row m-0" }, [
+        _c(
+          "select",
+          {
+            staticClass: "custom-select mr-1  col",
+            attrs: { id: "inlineFormCustomSelect" }
+          },
+          [
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
+            staticClass: "custom-select col",
+            attrs: { id: "inlineFormCustomSelect" }
+          },
+          [
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col form-row m-0" }, [
+        _c(
+          "select",
+          {
+            staticClass: "custom-select mr-1 col",
+            attrs: { id: "inlineFormCustomSelect" }
+          },
+          [
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
+            staticClass: "custom-select col",
+            attrs: { id: "inlineFormCustomSelect" }
+          },
+          [
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col form-row m-0" }, [
+        _c(
+          "select",
+          {
+            staticClass: "custom-select mr-1 col",
+            attrs: { id: "inlineFormCustomSelect" }
+          },
+          [
+            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
+            staticClass: "custom-select col",
+            attrs: { id: "inlineFormCustomSelect" }
+          },
+          [
+            _c("option", { attrs: { value: "High" } }, [_vm._v("High")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "close",
+        attrs: {
+          type: "button",
+          "data-dismiss": "alert",
+          "aria-label": "Close"
+        }
+      },
+      [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/personalInfo.vue?vue&type=template&id=1506504e&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/personalInfo.vue?vue&type=template&id=1506504e& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "form-row mb-2" }, [
+      _c("div", { staticClass: "col-md-8" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Full Name")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.persoanl.fullName,
+              expression: "persoanl.fullName"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: { type: "text", placeholder: "Full name" },
+          domProps: { value: _vm.persoanl.fullName },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.persoanl, "fullName", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-row mb-2" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Snk No.")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.persoanl.snkNumber,
+              expression: "persoanl.snkNumber"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: { type: "text", placeholder: "120003334" },
+          domProps: { value: _vm.persoanl.snkNumber },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.persoanl, "snkNumber", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Rank")]),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.persoanl.rank,
+                expression: "persoanl.rank"
+              }
+            ],
+            staticClass: "custom-select mr-sm-2 ",
+            attrs: { id: "inlineFormCustomSelect" },
+            on: {
+              change: function($event) {
+                var $$selectedVal = Array.prototype.filter
+                  .call($event.target.options, function(o) {
+                    return o.selected
+                  })
+                  .map(function(o) {
+                    var val = "_value" in o ? o._value : o.value
+                    return val
+                  })
+                _vm.$set(
+                  _vm.persoanl,
+                  "rank",
+                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                )
+              }
+            }
+          },
+          [
+            _c("option", { attrs: { selected: "" } }, [_vm._v("Snk")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "A" } }, [_vm._v("A")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "B" } }, [_vm._v("B")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "C" } }, [_vm._v("C")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Trde")]),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.persoanl.trade,
+                expression: "persoanl.trade"
+              }
+            ],
+            staticClass: "custom-select mr-sm-2",
+            attrs: { id: "inlineFormCustomSelect" },
+            on: {
+              change: function($event) {
+                var $$selectedVal = Array.prototype.filter
+                  .call($event.target.options, function(o) {
+                    return o.selected
+                  })
+                  .map(function(o) {
+                    var val = "_value" in o ? o._value : o.value
+                    return val
+                  })
+                _vm.$set(
+                  _vm.persoanl,
+                  "trade",
+                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                )
+              }
+            }
+          },
+          [
+            _c("option", { attrs: { selected: "" } }, [_vm._v("Driver")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "A" } }, [_vm._v("A")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "B" } }, [_vm._v("B")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "C" } }, [_vm._v("C")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v(" medical")]),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.persoanl.medical,
+                expression: "persoanl.medical"
+              }
+            ],
+            staticClass: "custom-select mr-sm-2",
+            attrs: { id: "inlineFormCustomSelect" },
+            on: {
+              change: function($event) {
+                var $$selectedVal = Array.prototype.filter
+                  .call($event.target.options, function(o) {
+                    return o.selected
+                  })
+                  .map(function(o) {
+                    var val = "_value" in o ? o._value : o.value
+                    return val
+                  })
+                _vm.$set(
+                  _vm.persoanl,
+                  "medical",
+                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                )
+              }
+            }
+          },
+          [
+            _c("option", { attrs: { selected: "" } }, [_vm._v("med")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "A" } }, [_vm._v("A")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "B" } }, [_vm._v("B")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "C" } }, [_vm._v("C")])
+          ]
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-row mb-2" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("label", [_vm._v("email")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "input-group" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.persoanl.email,
+                expression: "persoanl.email"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              id: "validationTooltipUsername",
+              placeholder: "email",
+              "aria-describedby": "validationTooltipUsernamePrepend",
+              required: ""
+            },
+            domProps: { value: _vm.persoanl.email },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.persoanl, "email", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "invalid-tooltip" }, [
+            _vm._v(
+              "\n                    Please choose a unique and valid email.\n                "
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("label", [_vm._v("Mobile Number")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "input-group" }, [
+          _vm._m(2),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.persoanl.mobileNumber,
+                expression: "persoanl.mobileNumber"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              id: "validationTooltipUsername",
+              placeholder: "mobile number",
+              "aria-describedby": "validationTooltipUsernamePrepend",
+              required: ""
+            },
+            domProps: { value: _vm.persoanl.mobileNumber },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.persoanl, "mobileNumber", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "invalid-tooltip" }, [
+            _vm._v(
+              "\n                    Please choose a unique and valid mobile number.\n                "
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("label", [_vm._v("NID Number")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "input-group" }, [
+          _vm._m(3),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.persoanl.NIDNumber,
+                expression: "persoanl.NIDNumber"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              id: "validationTooltipUsername",
+              placeholder: "NID number",
+              "aria-describedby": "validationTooltipUsernamePrepend",
+              required: ""
+            },
+            domProps: { value: _vm.persoanl.NIDNumber },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.persoanl, "NIDNumber", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "invalid-tooltip" }, [
+            _vm._v(
+              "\n                    Please choose a unique and valid NID number.\n                "
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("label", [_vm._v("IME Number")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "input-group" }, [
+          _vm._m(4),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.persoanl.IMENumber,
+                expression: "persoanl.IMENumber"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              id: "validationTooltipUsername",
+              placeholder: "IME number of your device",
+              "aria-describedby": "validationTooltipUsernamePrepend",
+              required: ""
+            },
+            domProps: { value: _vm.persoanl.IMENumber },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.persoanl, "IMENumber", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "invalid-tooltip" }, [
+            _vm._v(
+              "\n                        Please choose a unique and valid IME number.\n                    "
+            )
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "form-row" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Gender")]),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.persoanl.gender,
+                expression: "persoanl.gender"
+              }
+            ],
+            staticClass: "custom-select mr-sm-2",
+            attrs: { id: "inlineFormCustomSelect" },
+            on: {
+              change: function($event) {
+                var $$selectedVal = Array.prototype.filter
+                  .call($event.target.options, function(o) {
+                    return o.selected
+                  })
+                  .map(function(o) {
+                    var val = "_value" in o ? o._value : o.value
+                    return val
+                  })
+                _vm.$set(
+                  _vm.persoanl,
+                  "gender",
+                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                )
+              }
+            }
+          },
+          [
+            _c("option", { attrs: { value: "male" } }, [_vm._v("male")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "female" } }, [_vm._v("female")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "other" } }, [_vm._v("other")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Height")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "input-group" }, [
+          _vm._m(5),
+          _vm._v(" "),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.persoanl.height,
+                expression: "persoanl.height"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: {
+              type: "text",
+              id: "validationTooltipUsername",
+              placeholder: "height in centimeter",
+              "aria-describedby": "validationTooltipUsernamePrepend",
+              required: ""
+            },
+            domProps: { value: _vm.persoanl.height },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.persoanl, "height", $event.target.value)
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Birth Date")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.persoanl.birthDate,
+              expression: "persoanl.birthDate"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: { type: "date", placeholder: "" },
+          domProps: { value: _vm.persoanl.birthDate },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.persoanl, "birthDate", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("label", { attrs: { for: "" } }, [_vm._v("Blood Group")]),
+        _vm._v(" "),
+        _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.persoanl.bloodGroup,
+                expression: "persoanl.bloodGroup"
+              }
+            ],
+            staticClass: "custom-select mr-sm-2",
+            attrs: { id: "inlineFormCustomSelect" },
+            on: {
+              change: function($event) {
+                var $$selectedVal = Array.prototype.filter
+                  .call($event.target.options, function(o) {
+                    return o.selected
+                  })
+                  .map(function(o) {
+                    var val = "_value" in o ? o._value : o.value
+                    return val
+                  })
+                _vm.$set(
+                  _vm.persoanl,
+                  "bloodGroup",
+                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                )
+              }
+            }
+          },
+          [
+            _c("option", { attrs: { value: "A+" } }, [_vm._v("A+")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "A-" } }, [_vm._v("A-")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "B+" } }, [_vm._v("B+")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "B-" } }, [_vm._v("B-")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "AB+" } }, [_vm._v("AB+")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "AB-" } }, [_vm._v("AB-")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "O+" } }, [_vm._v("O+")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "O-" } }, [_vm._v("O-")])
+          ]
+        )
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4" }, [
+      _c("label", { attrs: { for: "" } }, [_vm._v("Profile Image")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "custom-file" }, [
+        _c("input", {
+          staticClass: "custom-file-input ",
+          attrs: { type: "file", id: "imgInp", required: "" }
+        }),
+        _vm._v(" "),
+        _c(
+          "label",
+          { staticClass: "custom-file-label ", attrs: { for: "imgInp" } },
+          [_vm._v("Choose file...")]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "invalid-feedback" }, [
+          _vm._v("Example invalid custom file feedback")
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c(
+        "span",
+        {
+          staticClass: "input-group-text shadow-inset-light",
+          attrs: { id: "validationTooltipUsernamePrepend" }
+        },
+        [_vm._v("@")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c(
+        "span",
+        {
+          staticClass: "input-group-text shadow-inset-light",
+          attrs: { id: "validationTooltipUsernamePrepend" }
+        },
+        [_vm._v("#")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c(
+        "span",
+        {
+          staticClass: "input-group-text shadow-inset-light",
+          attrs: { id: "validationTooltipUsernamePrepend" }
+        },
+        [_vm._v("#")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c(
+        "span",
+        {
+          staticClass: "input-group-text shadow-inset-light",
+          attrs: { id: "validationTooltipUsernamePrepend" }
+        },
+        [_vm._v("#")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-prepend" }, [
+      _c(
+        "span",
+        {
+          staticClass: "input-group-text cm shadow-inset-light",
+          attrs: { id: "validationTooltipUsernamePrepend" }
+        },
+        [_vm._v("cm")]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/serviceHistory.vue?vue&type=template&id=19a037aa&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/serviceHistory.vue?vue&type=template&id=19a037aa& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("div", { staticClass: "form-row mb-2" }, [
+        _c("div", { staticClass: "col" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Service Joining Date")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "date", placeholder: "120003334" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c("label", { attrs: { for: "" } }, [
+            _vm._v("Present Unit Joining date")
+          ]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "date", placeholder: "120003334" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Previous Unit/Org")]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "form-control",
+            attrs: { type: "text", placeholder: "previous unit" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v(" Present Unit")]),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass: "custom-select mr-sm-2",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { selected: "" } }, [_vm._v("Horse 26")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "A" } }, [_vm._v("A")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "B" } }, [_vm._v("B")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "C" } }, [_vm._v("C")])
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-3" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Served Unit/Org")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-9" }, [
+          _c("div", { staticClass: "form-check  custom-checkbox" }, [
+            _c("input", {
+              staticClass: "form-check-input custom-control-input",
+              attrs: {
+                type: "checkbox",
+                id: "inlineCheckbox1",
+                value: "option1"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "form-check-label custom-control-label",
+                attrs: { for: "inlineCheckbox1" }
+              },
+              [_vm._v("9 lancer")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-check  custom-checkbox" }, [
+            _c("input", {
+              staticClass: "form-check-input custom-control-input",
+              attrs: {
+                type: "checkbox",
+                id: "inlineCheckbox2",
+                value: "option2"
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "label",
+              {
+                staticClass: "form-check-label custom-control-label",
+                attrs: { for: "inlineCheckbox2" }
+              },
+              [_vm._v("ACC&S")]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-row mb-2" }, [
+        _c("div", { staticClass: "col v-align" }, [
+          _vm._v("\n                        #\n                    ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col v-align" }, [
+          _c("label", [_vm._v("2019")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col v-align" }, [
+          _c("label", [_vm._v("2018")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col v-align" }, [
+          _c("label", [_vm._v("2017")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-row m-0 mb-2" }, [
+        _c("div", { staticClass: "col v-align" }, [
+          _c("label", [_vm._v("APR ")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c(
+            "select",
+            {
+              staticClass: "custom-select mr-sm-2",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("High")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("Avg")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c(
+            "select",
+            {
+              staticClass: "custom-select mr-sm-2",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("High")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("Avg")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c(
+            "select",
+            {
+              staticClass: "custom-select mr-sm-2",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("High")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("Avg")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-row m-0 mb-2" }, [
+        _c("div", { staticClass: "col v-align" }, [
+          _c("label", [_vm._v("RET ")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c(
+            "select",
+            {
+              staticClass: "custom-select mr-sm-2",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "other" } }, [_vm._v("Pending")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "male" } }, [_vm._v("Passed")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("failed")])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c(
+            "select",
+            {
+              staticClass: "custom-select mr-sm-2",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("Passed")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("failed")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("Pending")])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col" }, [
+          _c(
+            "select",
+            {
+              staticClass: "custom-select mr-sm-2",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "female" } }, [_vm._v("failed")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "male" } }, [_vm._v("Passed")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("Pending")])
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-row m-0 mb-2" }, [
+        _c("div", { staticClass: "col v-align" }, [
+          _c("label", [_vm._v("IPFT")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col form-row m-0" }, [
+          _c(
+            "select",
+            {
+              staticClass: "custom-select mr-1 col",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("High")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("Avg")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass: "custom-select col",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("High")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("Avg")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col form-row m-0" }, [
+          _c(
+            "select",
+            {
+              staticClass: "custom-select mr-1  col",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("High")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("Avg")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass: "custom-select col",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("High")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("Avg")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col form-row m-0" }, [
+          _c(
+            "select",
+            {
+              staticClass: "custom-select mr-1 col",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("High")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("Avg")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "select",
+            {
+              staticClass: "custom-select col",
+              attrs: { id: "inlineFormCustomSelect" }
+            },
+            [
+              _c("option", { attrs: { value: "male" } }, [_vm._v("High")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "female" } }, [_vm._v("Avg")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c("div", { staticClass: "row m-0" }, [
+        _c("div", { staticClass: "col-md-3 v-align" }, [
+          _c("label", { attrs: { for: "" } }, [_vm._v("Punishment")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-9 p-1" }, [
+          _c("input", { staticClass: "form-control", attrs: { type: "text" } })
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
 /*!********************************************************************!*\
   !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
@@ -49343,6 +51576,14 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -49368,8 +51609,148 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+Vue.component('personal-info', __webpack_require__(/*! ./components/personalInfo.vue */ "./resources/js/components/personalInfo.vue")["default"]);
+Vue.component('service-history', __webpack_require__(/*! ./components/serviceHistory.vue */ "./resources/js/components/serviceHistory.vue")["default"]);
+Vue.component('academic', __webpack_require__(/*! ./components/academic.vue */ "./resources/js/components/academic.vue")["default"]);
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    isMarried: false,
+    hasChild: false,
+    childCount: 0,
+    missionCount: 1,
+    checkedSkill: [],
+    checkedSkillMax: [],
+    hasMax: false,
+    checkedOrg: [],
+    skillOption: {
+      entertainment: [{
+        description: 'acting',
+        checked: false
+      }, {
+        description: 'dancing',
+        checked: false
+      }, {
+        description: 'singing',
+        checked: false
+      }, {
+        description: 'stand-up comedy',
+        checked: false
+      }],
+      game: [{
+        description: 'cricket',
+        checked: false
+      }, {
+        description: 'football',
+        checked: false
+      }, {
+        description: 'handball',
+        checked: false
+      }, {
+        description: 'high-jump',
+        checked: false
+      }, {
+        description: 'long-jump',
+        checked: false
+      }, {
+        description: 'swimming',
+        checked: false
+      }, {
+        description: 'runing',
+        checked: false
+      }],
+      other: [{
+        description: 'cooking',
+        checked: false
+      }, {
+        description: 'driving',
+        checked: false
+      }, {
+        description: 'writing',
+        checked: false
+      }, {
+        description: 'drawing & painting',
+        checked: false
+      }]
+    },
+    orgOption: [{
+      description: 'lancer 9',
+      checked: false
+    }, {
+      description: 'Acc',
+      checked: false
+    }, {
+      description: 'Arms',
+      checked: false
+    }],
+    formValue: {
+      personal: {
+        fullName: '',
+        snkNumber: '',
+        rank: '',
+        trade: '',
+        medical: '',
+        email: '',
+        mobileNumber: 0,
+        NIDNumber: 0,
+        IMENumber: 0,
+        gender: '',
+        height: 0,
+        birthDate: '',
+        bloodGroup: ''
+      },
+      academic: {}
+    }
+  },
+  computed: {
+    checkedList: function checkedList() {
+      this.checkedSkill = _toConsumableArray(this.skillOption.game.filter(function (g) {
+        return g;
+      }));
+      this.checkedSkill = [].concat(_toConsumableArray(this.checkedSkill), _toConsumableArray(this.skillOption.entertainment.filter(function (g) {
+        return g;
+      })));
+      this.checkedSkill = [].concat(_toConsumableArray(this.checkedSkill), _toConsumableArray(this.skillOption.other.filter(function (g) {
+        return g;
+      })));
+      return this.checkedSkill;
+    },
+    updatedChildCount: function updatedChildCount() {
+      this.hasChild = this.childCount > 0 ? true : false;
+      return Number(this.childCount);
+    }
+  },
+  methods: {
+    upDateCheckedSkill: function upDateCheckedSkill(e) {
+      var i = _.indexOf(this.checkedSkillMax, e);
+
+      i > -1 ? _.pull(this.checkedSkillMax, e) : this.checkedSkillMax.push(e);
+      this.hasMax = this.checkedSkillMax.length >= 5 ? true : false;
+      this.checkedSkill.filter(function (g) {
+        if (g.description == e) g.checked ? g.checked = false : g.checked = true;
+      }); // !this.hasMax || alert('Just reached max skill allowed to be added!!\nYou may removed from your selection to check new item.');
+    },
+    upDateMarried: function upDateMarried() {
+      this.isMarried = this.isMarried ? false : true;
+      this.childCount = !this.isMarried ? 0 : this.childCount;
+    }
+  }
+}); // jquery
+
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      $('#proimg').attr('src', e.target.result);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#imgInp").change(function () {
+  readURL(this);
 });
 
 /***/ }),
@@ -49488,6 +51869,213 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/academic.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/academic.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _academic_vue_vue_type_template_id_4459a2d2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./academic.vue?vue&type=template&id=4459a2d2& */ "./resources/js/components/academic.vue?vue&type=template&id=4459a2d2&");
+/* harmony import */ var _academic_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./academic.vue?vue&type=script&lang=js& */ "./resources/js/components/academic.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _academic_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _academic_vue_vue_type_template_id_4459a2d2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _academic_vue_vue_type_template_id_4459a2d2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/academic.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/academic.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/academic.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_academic_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./academic.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/academic.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_academic_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/academic.vue?vue&type=template&id=4459a2d2&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/academic.vue?vue&type=template&id=4459a2d2& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_academic_vue_vue_type_template_id_4459a2d2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./academic.vue?vue&type=template&id=4459a2d2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/academic.vue?vue&type=template&id=4459a2d2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_academic_vue_vue_type_template_id_4459a2d2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_academic_vue_vue_type_template_id_4459a2d2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/personalInfo.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/personalInfo.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _personalInfo_vue_vue_type_template_id_1506504e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./personalInfo.vue?vue&type=template&id=1506504e& */ "./resources/js/components/personalInfo.vue?vue&type=template&id=1506504e&");
+/* harmony import */ var _personalInfo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./personalInfo.vue?vue&type=script&lang=js& */ "./resources/js/components/personalInfo.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _personalInfo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _personalInfo_vue_vue_type_template_id_1506504e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _personalInfo_vue_vue_type_template_id_1506504e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/personalInfo.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/personalInfo.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/personalInfo.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_personalInfo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./personalInfo.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/personalInfo.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_personalInfo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/personalInfo.vue?vue&type=template&id=1506504e&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/personalInfo.vue?vue&type=template&id=1506504e& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_personalInfo_vue_vue_type_template_id_1506504e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./personalInfo.vue?vue&type=template&id=1506504e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/personalInfo.vue?vue&type=template&id=1506504e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_personalInfo_vue_vue_type_template_id_1506504e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_personalInfo_vue_vue_type_template_id_1506504e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/serviceHistory.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/components/serviceHistory.vue ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _serviceHistory_vue_vue_type_template_id_19a037aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./serviceHistory.vue?vue&type=template&id=19a037aa& */ "./resources/js/components/serviceHistory.vue?vue&type=template&id=19a037aa&");
+/* harmony import */ var _serviceHistory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./serviceHistory.vue?vue&type=script&lang=js& */ "./resources/js/components/serviceHistory.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _serviceHistory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _serviceHistory_vue_vue_type_template_id_19a037aa___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _serviceHistory_vue_vue_type_template_id_19a037aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/serviceHistory.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/serviceHistory.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/serviceHistory.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_serviceHistory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./serviceHistory.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/serviceHistory.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_serviceHistory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/serviceHistory.vue?vue&type=template&id=19a037aa&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/components/serviceHistory.vue?vue&type=template&id=19a037aa& ***!
+  \***********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_serviceHistory_vue_vue_type_template_id_19a037aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./serviceHistory.vue?vue&type=template&id=19a037aa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/serviceHistory.vue?vue&type=template&id=19a037aa&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_serviceHistory_vue_vue_type_template_id_19a037aa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_serviceHistory_vue_vue_type_template_id_19a037aa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -49506,8 +52094,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\wamp64\www\laravelHome\SoldierInfo\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\wamp64\www\laravelHome\SoldierInfo\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\wamp64\www\laravelHome\soldierinfo\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\wamp64\www\laravelHome\soldierinfo\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

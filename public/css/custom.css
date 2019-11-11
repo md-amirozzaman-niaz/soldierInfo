@@ -1,6 +1,50 @@
-a.active{
-    color: black;
-    border-bottom: 2px solid;
+.nav-tabs li a{
+    position: relative;
+}
+.nav-tabs li a:hover{
+    text-decoration: none;
+}
+
+.nav-tabs li a.active{
+    /* color: grey;
+    box-shadow: inset 0px 2px 2px 0px #999;
+    transition-property: box-shadow;
+    transition-duration: 500ms;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px; */
+    font-weight: 600;
+    color: #83888c;
+       /* box-shadow: inset 0px -2px 0px -1px #516bf0; */
+}
+.nav-tabs li a:not(.active):hover:after, .nav-tabs li a:not(.active):hover:before,.nav-tabs li a.active:after,.nav-tabs li a.active:before {
+    width: 50%;
+}
+.nav-tabs li a:before {
+    background-color: #3578e5;
+    left: 50%;
+
+}
+.nav-tabs li a:after {
+    background-color: #3578e5;
+    right: 50%;
+}
+.nav-tabs li a:before,.nav-tabs li a:after {
+    bottom: -0.75px;
+    content: '';
+    height: 2px;
+    margin: 2px 0 0;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    width: 0;
+}
+.nav-tabs {
+    /* border-bottom: 0px; */
+    height: 29px;
+}
+.nav-tabs li a:not(.active) {
+    box-shadow: inset 0px -0.75px 0px 0px #999;
+    color: #565656;
+    font-weight: 300;
 }
 .tab-pane.active {
     display: block;
@@ -9,13 +53,128 @@ a.active{
 .tab-pane {
     display: none;
 }
-
-.v-align{
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-    font-weight: 600;
+.selected-item-list{
+    padding-left: 1em;
+    display: inline-flex;
+    line-height: 1em;
+    position: absolute;
+    top: -4px;
 }
-.form-row{
-    /* margin:0 !important; */
+.selected-item-list li.show {
+    width: auto;
+    padding: .25em;
+    margin: .2em;
+    transform: scale(1,1);
+}
+.selected-item-list li{
+    display: inline-block;
+    width: 0px;
+    height: 24px;
+    overflow: hidden;
+    background: #3490dc;
+    color: #e9ecfb;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px #ababab;
+    transition: all .2s ease-out;
+    transform: scale(0,0.5);
+}
+.selected-item-list li span{
+    font-size: 8px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -1px;
+    text-align: center;
+    line-height: 16px;
+    color: #484646;
+    background: #bdc2ff61;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.selected-item-list li span:hover{
+    font-weight: bolder;
+    color:#fff;
+    background: cadetblue;
+}
+.v-align{
+    width: 100%;
+    text-align: center;
+    /* font-weight: 600; */
+    line-height: calc(1.6em + 0.75rem + 2px);
+    color: #949494;
+}
+
+.popups-fade-in-up {
+	-webkit-animation: popups-fade-in-up 0.2s ease forwards;
+	-moz-animation: popups-fade-in-up 0.2s ease forwards;
+	animation: popups-fade-in-up 0.2s ease forwards;
+}
+@keyframes popups-fade-in-up{
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(0, -20px);
+		-moz-transform: translate(0, -20px);
+		-ms-transform: translate(0, -20px);
+		transform: translate(0, -20px);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+		-moz-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+}
+.martial-details,.children-details,.children{
+    opacity: 0;
+}
+.cm{
+    padding: 0.375rem 0.42rem;
+}
+
+.loader::placeholder {
+    color: inherit;
+}
+
+.loader {
+    background: #f3f3f3;
+    color: #f3f3f3;
+    border-color: #f3f3f3;
+  
+}
+/* input.loader,div.loader,select.loader{
+    -webkit-animation: tiktik 1.5s cubic-bezier(0.68, 0.08, 0, 0.52);
+	-moz-animation: tiktik 1.5s cubic-bezier(0.68, 0.08, 0, 0.52);
+    animation: tiktik 1.5s cubic-bezier(0.68, 0.08, 0, 0.52);
+    animation-iteration-count: infinite;
+} */
+.loader:after{
+    background:inherit;
+    color: inherit;
+}
+@keyframes tiktik{
+	0% {
+        box-shadow: inset 5em 0px 0px 0px #d4d3d3;
+        color: #d4d3d3;
+    }
+    
+    100% {
+        box-shadow: inset 30em 0px 0px 0px #e0e0e0;
+        color: #e0e0e0;
+    }
+}
+.shadow-inset-light{
+    box-shadow: inset -1px 0px 3px -1px #bbb;
+}
+.img-thumbnail{
+    padding: 0.25rem;
+    background-color: #f8fafc;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    width:200px;
+    height: 200px;
+}
+img{
+    width:100%;
 }
