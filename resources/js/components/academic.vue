@@ -21,28 +21,28 @@
         <label>Result</label>
       </div>
       <div class="col">
-        <select class="custom-select mr-sm-2" v-model="form.JSC" id="inlineFormCustomSelect">
+        <select class="custom-select mr-sm-2" v-model="form.JSC" id>
           <option value="Pending">Pending</option>
           <option value="Passed">Passed</option>
           <option value="failed">failed</option>
         </select>
       </div>
       <div class="col">
-        <select class="custom-select mr-sm-2" v-model="form.SSC" id="inlineFormCustomSelect">
+        <select class="custom-select mr-sm-2" v-model="form.SSC" id>
           <option value="other">Pending</option>
           <option value="Passed">Passed</option>
           <option value="failed">failed</option>
         </select>
       </div>
       <div class="col">
-        <select class="custom-select mr-sm-2" v-model="form.HSC" id="inlineFormCustomSelect">
+        <select class="custom-select mr-sm-2" v-model="form.HSC" id>
           <option value="Passed">Passed</option>
           <option value="failed">failed</option>
           <option value="other">Pending</option>
         </select>
       </div>
       <div class="col">
-        <select class="custom-select mr-sm-2" v-model="form.other" id="inlineFormCustomSelect">
+        <select class="custom-select mr-sm-2" v-model="form.other" id>
           <option value="failed">failed</option>
           <option value="Passed">Passed</option>
           <option value="other">Pending</option>
@@ -71,48 +71,48 @@
         <label>Result</label>
       </div>
       <div class="col form-row m-0">
-        <select class="custom-select mr-1 col" id="inlineFormCustomSelect">
+        <select class="custom-select mr-1 col" id>
           <option value="Passed">High</option>
           <option value="failed">Avg</option>
           <option value="other">low</option>
         </select>
-        <select class="custom-select col" id="inlineFormCustomSelect">
-          <option value="Passed">High</option>
-          <option value="failed">Avg</option>
-          <option value="other">low</option>
-        </select>
-      </div>
-      <div class="col form-row m-0">
-        <select class="custom-select mr-1 col" id="inlineFormCustomSelect">
-          <option value="Passed">High</option>
-          <option value="failed">Avg</option>
-          <option value="other">low</option>
-        </select>
-        <select class="custom-select col" id="inlineFormCustomSelect">
+        <select class="custom-select col" id>
           <option value="Passed">High</option>
           <option value="failed">Avg</option>
           <option value="other">low</option>
         </select>
       </div>
       <div class="col form-row m-0">
-        <select class="custom-select mr-1 col" id="inlineFormCustomSelect">
+        <select class="custom-select mr-1 col" id>
           <option value="Passed">High</option>
           <option value="failed">Avg</option>
           <option value="other">low</option>
         </select>
-        <select class="custom-select col" id="inlineFormCustomSelect">
+        <select class="custom-select col" id>
           <option value="Passed">High</option>
           <option value="failed">Avg</option>
           <option value="other">low</option>
         </select>
       </div>
       <div class="col form-row m-0">
-        <select class="custom-select mr-1 col" id="inlineFormCustomSelect">
+        <select class="custom-select mr-1 col" id>
           <option value="Passed">High</option>
           <option value="failed">Avg</option>
           <option value="other">low</option>
         </select>
-        <select class="custom-select col" id="inlineFormCustomSelect">
+        <select class="custom-select col" id>
+          <option value="Passed">High</option>
+          <option value="failed">Avg</option>
+          <option value="other">low</option>
+        </select>
+      </div>
+      <div class="col form-row m-0">
+        <select class="custom-select mr-1 col" id>
+          <option value="Passed">High</option>
+          <option value="failed">Avg</option>
+          <option value="other">low</option>
+        </select>
+        <select class="custom-select col" id>
           <option value="High">High</option>
           <option value="failed">Avg</option>
           <option value="other">low</option>

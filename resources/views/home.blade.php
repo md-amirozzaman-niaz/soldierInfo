@@ -276,9 +276,9 @@
                         Personal Information
                     </div>
                     <div class="row">
-                    <div class="col-md-2 img-thumbnail" style="height:160px;"><img src id="proimg" class=""></div>
+                    <div class="col-md-2 img-thumbnail"><img src id="proimg" class=""></div>
                     <div class="col-md-10 "><div v-for="(value, name) in formValue.personal" class="row bg-white p-1">
-                        <div class="col-md-2" :class="{'bg-light': value}">  @{{ _.upperCase(name) }} :</div>
+                        <div class="col-md-2" :class="{'bg-light': value}">  @{{ _.capitalize(_.upperCase(name)) }}  :</div>
                         <div class="col-md-10 bg-light"> @{{ value }} </div> 
                     </div>
                     </div>
