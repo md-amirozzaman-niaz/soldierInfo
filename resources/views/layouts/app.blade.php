@@ -34,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a href="/soldier/create" class="nav-link">Create soldier profile</a></li>
+                        <li class="nav-item"><a href="/home" class="nav-link">Create soldier profile</a></li>
                         <li class="nav-item"><a href="/soldier" class="nav-link">Look up</a></li>
                         {{-- <li class="nav-item"><a href="/solider/1/update" class="nav-link">Update</a></li> --}}
                     </ul>
