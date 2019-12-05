@@ -1980,105 +1980,6 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     skills: {
@@ -2113,7 +2014,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
   },
   methods: {
     upDateCheckedSkill: function upDateCheckedSkill(e) {
-      this.$emit('up-date-checked-skill', e);
+      this.$emit("up-date-checked-skill", e);
     }
   },
   created: function created() {
@@ -2135,6 +2036,64 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -37814,194 +37773,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "col" }, [
-      _vm._v("\n            Civil\n        ")
-    ]),
-    _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "form-row m-0" }, [
-      _vm._m(1),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "select",
-          {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.form.JSC,
-                expression: "form.JSC"
-              }
-            ],
-            staticClass: "custom-select mr-sm-2",
-            attrs: { id: "inlineFormCustomSelect" },
-            on: {
-              change: function($event) {
-                var $$selectedVal = Array.prototype.filter
-                  .call($event.target.options, function(o) {
-                    return o.selected
-                  })
-                  .map(function(o) {
-                    var val = "_value" in o ? o._value : o.value
-                    return val
-                  })
-                _vm.$set(
-                  _vm.form,
-                  "JSC",
-                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-                )
-              }
-            }
-          },
-          [
-            _c("option", { attrs: { value: "Pending" } }, [_vm._v("Pending")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("Passed")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("failed")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "select",
-          {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.form.SSC,
-                expression: "form.SSC"
-              }
-            ],
-            staticClass: "custom-select mr-sm-2",
-            attrs: { id: "inlineFormCustomSelect" },
-            on: {
-              change: function($event) {
-                var $$selectedVal = Array.prototype.filter
-                  .call($event.target.options, function(o) {
-                    return o.selected
-                  })
-                  .map(function(o) {
-                    var val = "_value" in o ? o._value : o.value
-                    return val
-                  })
-                _vm.$set(
-                  _vm.form,
-                  "SSC",
-                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-                )
-              }
-            }
-          },
-          [
-            _c("option", { attrs: { value: "other" } }, [_vm._v("Pending")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("Passed")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("failed")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "select",
-          {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.form.HSC,
-                expression: "form.HSC"
-              }
-            ],
-            staticClass: "custom-select mr-sm-2",
-            attrs: { id: "inlineFormCustomSelect" },
-            on: {
-              change: function($event) {
-                var $$selectedVal = Array.prototype.filter
-                  .call($event.target.options, function(o) {
-                    return o.selected
-                  })
-                  .map(function(o) {
-                    var val = "_value" in o ? o._value : o.value
-                    return val
-                  })
-                _vm.$set(
-                  _vm.form,
-                  "HSC",
-                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-                )
-              }
-            }
-          },
-          [
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("Passed")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("failed")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("Pending")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "select",
-          {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.form.other,
-                expression: "form.other"
-              }
-            ],
-            staticClass: "custom-select mr-sm-2",
-            attrs: { id: "inlineFormCustomSelect" },
-            on: {
-              change: function($event) {
-                var $$selectedVal = Array.prototype.filter
-                  .call($event.target.options, function(o) {
-                    return o.selected
-                  })
-                  .map(function(o) {
-                    var val = "_value" in o ? o._value : o.value
-                    return val
-                  })
-                _vm.$set(
-                  _vm.form,
-                  "other",
-                  $event.target.multiple ? $$selectedVal : $$selectedVal[0]
-                )
-              }
-            }
-          },
-          [
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("failed")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("Passed")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("Pending")])
-          ]
-        )
-      ])
-    ]),
-    _vm._v(" "),
-    _c("hr"),
-    _vm._v(" "),
-    _c("div", { staticClass: "col" }, [_vm._v("\n            Military\n    ")]),
-    _vm._v(" "),
-    _vm._m(2),
-    _vm._v(" "),
-    _vm._m(3),
-    _vm._v(" "),
-    _c("hr"),
-    _vm._v(" "),
-    _c("div", { staticClass: "col" }, [
       _c("label", { attrs: { for: "" } }, [_vm._v("Special skill")]),
       _vm._v(" "),
       _c(
@@ -38012,7 +37783,7 @@ var render = function() {
             "li",
             { key: item.description, class: { show: item.checked } },
             [
-              _vm._v(_vm._s(item.description) + " "),
+              _vm._v("\n        " + _vm._s(item.description) + "\n        "),
               _c(
                 "span",
                 {
@@ -38040,9 +37811,9 @@ var render = function() {
             },
             [
               _vm._v(
-                "\n            you have reached max skill.To add else item,remove from added item\n            "
+                "\n      you have reached max skill.To add else item,remove from added item\n      "
               ),
-              _vm._m(4)
+              _vm._m(0)
             ]
           )
         : _vm._e()
@@ -38060,7 +37831,7 @@ var render = function() {
               "div",
               {
                 key: game.description,
-                staticClass: "form-check  custom-checkbox"
+                staticClass: "form-check custom-checkbox"
               },
               [
                 _c("input", {
@@ -38104,7 +37875,7 @@ var render = function() {
               "div",
               {
                 key: entertainment.description,
-                staticClass: "form-check  custom-checkbox"
+                staticClass: "form-check custom-checkbox"
               },
               [
                 _c("input", {
@@ -38151,7 +37922,7 @@ var render = function() {
               "div",
               {
                 key: other.description,
-                staticClass: "form-check  custom-checkbox"
+                staticClass: "form-check custom-checkbox"
               },
               [
                 _c("input", {
@@ -38187,194 +37958,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-row mb-2" }, [
-      _c("div", { staticClass: "col v-align" }, [
-        _vm._v("\n            #\n        ")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col v-align" }, [_c("label", [_vm._v("JSC")])]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col v-align" }, [_c("label", [_vm._v("SSC")])]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col v-align" }, [_c("label", [_vm._v("HSC")])]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col v-align" }, [
-        _c("label", [_vm._v("OTHER")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col v-align" }, [
-      _c("label", [_vm._v("Result")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-row m-0" }, [
-      _c("div", { staticClass: "col v-align" }, [
-        _vm._v("\n            #\n        ")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col v-align" }, [_c("label", [_vm._v("BTT")])]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col v-align" }, [
-        _c("label", [_vm._v("ARMS")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col v-align" }, [
-        _c("label", [_vm._v("Comando")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col v-align" }, [_c("label", [_vm._v("BMR")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-row m-0" }, [
-      _c("div", { staticClass: "col v-align" }, [
-        _c("label", [_vm._v("Result")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col form-row m-0" }, [
-        _c(
-          "select",
-          {
-            staticClass: "custom-select mr-1 col",
-            attrs: { id: "inlineFormCustomSelect" }
-          },
-          [
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass: "custom-select col",
-            attrs: { id: "inlineFormCustomSelect" }
-          },
-          [
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col form-row m-0" }, [
-        _c(
-          "select",
-          {
-            staticClass: "custom-select mr-1  col",
-            attrs: { id: "inlineFormCustomSelect" }
-          },
-          [
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass: "custom-select col",
-            attrs: { id: "inlineFormCustomSelect" }
-          },
-          [
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col form-row m-0" }, [
-        _c(
-          "select",
-          {
-            staticClass: "custom-select mr-1 col",
-            attrs: { id: "inlineFormCustomSelect" }
-          },
-          [
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass: "custom-select col",
-            attrs: { id: "inlineFormCustomSelect" }
-          },
-          [
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "col form-row m-0" }, [
-        _c(
-          "select",
-          {
-            staticClass: "custom-select mr-1 col",
-            attrs: { id: "inlineFormCustomSelect" }
-          },
-          [
-            _c("option", { attrs: { value: "Passed" } }, [_vm._v("High")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "select",
-          {
-            staticClass: "custom-select col",
-            attrs: { id: "inlineFormCustomSelect" }
-          },
-          [
-            _c("option", { attrs: { value: "High" } }, [_vm._v("High")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "failed" } }, [_vm._v("Avg")]),
-            _vm._v(" "),
-            _c("option", { attrs: { value: "other" } }, [_vm._v("low")])
-          ]
-        )
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -38486,7 +38069,7 @@ var render = function() {
                 expression: "persoanl.rank"
               }
             ],
-            staticClass: "custom-select mr-sm-2 ",
+            staticClass: "custom-select mr-sm-2",
             attrs: { id: "inlineFormCustomSelect" },
             on: {
               change: function($event) {
@@ -38519,7 +38102,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("label", { attrs: { for: "" } }, [_vm._v("Trde")]),
+        _c("label", { attrs: { for: "" } }, [_vm._v("Trade")]),
         _vm._v(" "),
         _c(
           "select",
@@ -38565,7 +38148,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "col" }, [
-        _c("label", { attrs: { for: "" } }, [_vm._v(" medical")]),
+        _c("label", { attrs: { for: "" } }, [_vm._v("medical")]),
         _vm._v(" "),
         _c(
           "select",
@@ -38647,9 +38230,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("div", { staticClass: "invalid-tooltip" }, [
-            _vm._v(
-              "\n                    Please choose a unique and valid email.\n                "
-            )
+            _vm._v("Please choose a unique and valid email.")
           ])
         ])
       ]),
@@ -38689,9 +38270,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("div", { staticClass: "invalid-tooltip" }, [
-            _vm._v(
-              "\n                    Please choose a unique and valid mobile number.\n                "
-            )
+            _vm._v("Please choose a unique and valid mobile number.")
           ])
         ])
       ]),
@@ -38731,9 +38310,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("div", { staticClass: "invalid-tooltip" }, [
-            _vm._v(
-              "\n                    Please choose a unique and valid NID number.\n                "
-            )
+            _vm._v("Please choose a unique and valid NID number.")
           ])
         ])
       ]),
@@ -38773,9 +38350,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("div", { staticClass: "invalid-tooltip" }, [
-            _vm._v(
-              "\n                        Please choose a unique and valid IME number.\n                    "
-            )
+            _vm._v("Please choose a unique and valid IME number.")
           ])
         ])
       ])
@@ -38954,13 +38529,13 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "custom-file" }, [
         _c("input", {
-          staticClass: "custom-file-input ",
+          staticClass: "custom-file-input",
           attrs: { type: "file", id: "imgInp", required: "" }
         }),
         _vm._v(" "),
         _c(
           "label",
-          { staticClass: "custom-file-label ", attrs: { for: "imgInp" } },
+          { staticClass: "custom-file-label", attrs: { for: "imgInp" } },
           [_vm._v("Choose file...")]
         ),
         _vm._v(" "),
@@ -52094,8 +51669,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\wamp64\www\laravelHome\soldierinfo\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\wamp64\www\laravelHome\soldierinfo\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\wamp64\www\laravelHome\SoldierInfo\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\wamp64\www\laravelHome\SoldierInfo\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
